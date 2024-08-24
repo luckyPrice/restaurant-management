@@ -10,7 +10,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
-var foodcollection *mongo.Collection = database.Opencollection(database.Cliet, "food")
+var foodcollection *mongo.Collection = database.Opencollection(database.Client, "food")
 
 func main() {
 	port := os.Getenv("PORT")
